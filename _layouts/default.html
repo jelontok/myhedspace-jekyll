@@ -10,8 +10,8 @@
 
 {{ content }}
 
-{% for template in site.templates %}
-    <a href="{{ template.url }}">{{ template.title }}</a>
+{% for post in site.posts %}
+    <a href="{{ post.url }}">{{ post.title }}</a>
 {% endfor %}
             
 </body>
