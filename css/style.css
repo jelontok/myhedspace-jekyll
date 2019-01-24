@@ -142,7 +142,7 @@ main {
 
 .feature .cta {
     background-color: #fff;
-    width: 468px;
+    max-width: 468px;
     height: 60px;
     margin: 60px auto 0;
 }
