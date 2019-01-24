@@ -1,0 +1,298 @@
+/* 
+Myhedspace Starter - v1.0
+by Jose Erlino M. Lontok
+http://jelontok.com
+http://myhedspace.com 
+*/
+
+/* Add 3rd party code  here */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css');
+@import url('https://use.fontawesome.com/releases/v5.3.1/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*  Main Elements  */
+h1,h2,h3 {
+    margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+table caption {
+    border-bottom: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+td,th {
+    padding: 10px;    
+    text-align: left;
+}
+.table-celled caption, .table-celled td, .table-celled tr, .table-celled td, .table-celled th {
+    border: 1px solid;
+}
+.table-celled caption {
+    border-bottom: 0;
+}
+code,kbd,samp {
+    background-color: #333;
+    padding: 10px;
+    color: #ccc;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+/* nav */
+nav {
+    background-color: #2f3241;
+    border-bottom: 1px #000 solid;
+    padding: 1em 0;
+}
+
+nav .brand {
+    color: #74b1be;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav .brand span {
+    font-weight: 300;
+    color: #999;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+}
+
+.nav a {
+    display: block;
+    padding: 0 1em;
+    color: #74b1be;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+main {
+    padding: 2em 0;
+}
+
+.feature {
+    background-color: #2b2e3b;
+    padding: 5em 0;
+    text-align: center;
+    background:url(../img/web-design-2038872_1920.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.feature .container {
+    position: relative;
+    z-index: 2;
+}
+
+.feature:before {
+    content:'';
+    width: 100%;
+    height: 100%;
+    background-color: #2b2e3b;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.feature h1 {
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.feature h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.feature .fab, .feature .far {
+    font-size: 10em;
+    margin-right: 20px;
+    vertical-align: middle;
+    color: #3a585f;
+}
+
+.feature .fas {
+    font-size: 2em;
+    margin-right: 20px;
+    vertical-align: middle;
+    color: #fff;
+}
+
+.feature .cta {
+    background-color: #fff;
+    width: 468px;
+    height: 60px;
+    margin: 60px auto 0;
+}
+
+/* layout helpers */
+.fc {
+    display: flex;
+    flex:auto;
+}
+
+.fc-s {
+    justify-content: flex-start;
+}
+
+.fc-e {
+    justify-content: flex-end;
+}
+
+.fgrid {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    padding: 50px 0;
+}
+
+.fgrid-3 .col {
+    width: 32%;
+    margin-bottom: 15px;
+}
+
+.fgrid .col img {
+    max-width: 100%;
+    height: auto;    
+    margin: auto;
+    display: block;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.txt-l {
+    text-align: left;
+}
+
+.txt-c {
+    text-align: center;
+}
+
+.txt-r {
+    text-align: right
+}
+
+.txt-j {
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.card .thumb {
+    border: 1px #eee solid;
+    border-radius: 5px
+}
+
+.card header .links {
+    text-align: center;
+}
+
+.card header h3 {
+    margin-top: 15px;
+}
+
+.card header .button {
+    text-decoration: none;
+    background-color: #3a585f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* contact form */
+#contact-form::after {
+    content:'';
+    clear:both;
+    display: block;
+}
+
+#contact-form input[type="text"] {
+    width: 49.5%;
+    float: left;
+    background-color: #f1f2f3;
+    border: 0;
+    padding: 15px 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"]:nth-child(2), #contact-form input[type="text"]:nth-child(4)  {
+    float: right;
+}
+
+#contact-form input[type="text"]:nth-child(3) {
+    clear:left;
+}
+
+#contact-form textarea {
+    width: 100%;
+    height: 225px;
+    margin-bottom: 10px;
+    background-color: #f1f2f3;
+    border: 0;
+    padding: 20px;
+    resize: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    border: 0;
+    background-color: #74b1be;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    margin: auto;
+    display: block;
+}
+
+/* footer */
+footer {
+    background-color: #f6f8f8;
+    border-top: 1px #e0e5e6 solid;
+    padding: 2em;
+    text-align: center;
+    color:#7c9398;
+}
+
+footer a {
+    color:#7c9398;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2018-6-20 15:41:13
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+.heartbeat{-webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both}
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
