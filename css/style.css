@@ -49,6 +49,10 @@ code,kbd,samp {
     border-radius: 4px;
 }
 
+a {
+    color: #74b1be;
+}
+
 /* nav */
 nav {
     background-color: #2f3241;
@@ -203,6 +207,10 @@ main {
     margin: auto;
 }
 
+.container img {
+    max-width: 100%;
+}
+
 .card .thumb {
     border: 1px #eee solid;
     border-radius: 5px
@@ -223,6 +231,36 @@ main {
     padding: 5px 10px;
     border-radius: 5px;
     display: inline-block;
+}
+
+.page main>section {
+    display: flex;
+}
+
+.page main>section>article {
+    width: 70%;
+    padding-right: 5%;
+}
+
+.page main>section>aside {
+    width: 30%;
+    min-height: 500px;
+    background-color: #74b1be;
+}
+
+.breadcrumb {
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+
+a.download-btn {
+    background-color: #74b1be;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: inline-block;
+    text-decoration: none;
 }
 
 /* contact form */
