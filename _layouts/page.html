@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Myhedspace is a free website templates project created by Jose Erlino Lontok">
-        <title>{{ page.title }}</title>
+        <title>{{ page.title }} | Free Website Templates | Myhedspace.com</title>
         <link rel="stylesheet" href="{{ site.url }}/css/style.css">
     </head>
     <body class="page">
@@ -15,6 +15,7 @@
                 <a href="{{ site.url }}" class="brand">Myhed<span>space</span></a>
                 <ul class="nav fc fc-e">
                     <li><a href="{{ site.url }}">Home</a></li>
+                    <li><a href="{{ site.url }}/about">About</a></li>
                     <li><a href="{{ site.url }}/contact">Contact</a></li>
                 </ul>
             </div>
@@ -40,17 +41,21 @@
         </section>                      
         
         <main>
-            <section class="container">
-                <article>
-                    <p class="breadcrumb"><a href="{{ site.url }}">Home</a> &raquo; {{ page.title }}</p>
-                    {{ content }}
-                </article>
-                <aside></aside>
-            </section>
+            <div class="container">
+                
+                <section>
+                    <article>
+                        <p class="breadcrumb"><a href="{{ site.url }}">Home</a> &raquo; {{ page.title }}</p>
+                        {{ content }}
+                    </article>
+                </section>
+                
+            </div>
         </main>
         
         <footer id="site-footer">            
             <p>Myhedspace is a free website templates project created by <a href="http://jelontok.com">Jose Erlino Lontok</a></p>
+            <p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
             <p><a href="https://github.com/jelontok"><i class="fab fa-github"></i></a></p>
         </footer>
         

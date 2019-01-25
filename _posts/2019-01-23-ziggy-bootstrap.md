@@ -10,6 +10,8 @@ templatethumb: img/ziggy-bootstrap.jpg
 # Ziggy Bootstrap
 A Multi-Purpose Reponsive Bootstrap Template.
 
+---
+
 <a href="https://github.com/jelontok/ziggy-bootstrap/archive/master.zip" class="download-btn" target="_blank"><i class="fab fa-github"></i> Download from GitHub</a>
 
 ![Ziggy Bootstrap - A Multi-Purpose Reponsive Bootstrap Template.]({{ site.url }}/img/ziggy-bootstrap-full.png "Ziggy Bootstrap - A Multi-Purpose Reponsive Bootstrap Template")

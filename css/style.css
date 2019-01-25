@@ -1,5 +1,5 @@
 /* 
-Myhedspace Starter - v1.0
+Myhedspace Jekyll - v1.5
 by Jose Erlino M. Lontok
 http://jelontok.com
 http://myhedspace.com 
@@ -147,6 +147,21 @@ main {
     margin: 60px auto 0;
 }
 
+hr {
+    height: 5px;    
+    margin: 40px auto;
+    border: 0;
+    background-color: #3a585f;    
+}
+
+hr.small {
+    width: 150px;
+    height: 5px;    
+    margin: 40px auto 0 auto;
+    border: 0;
+    background-color: #3a585f;    
+}
+
 /* layout helpers */
 .fc {
     display: flex;
@@ -159,30 +174,6 @@ main {
 
 .fc-e {
     justify-content: flex-end;
-}
-
-.fgrid {
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-    padding: 50px 0;
-}
-
-.fgrid-3 .col {
-    width: 32%;
-    margin-bottom: 15px;
-}
-
-.fgrid .col img {
-    max-width: 100%;
-    height: auto;    
-    margin: auto;
-    display: block;
-}
-
-.sidebar {
-    width: 30%;
 }
 
 .txt-l {
@@ -211,43 +202,6 @@ main {
     max-width: 100%;
 }
 
-.card .thumb {
-    border: 1px #eee solid;
-    border-radius: 5px
-}
-
-.card header .links {
-    text-align: center;
-}
-
-.card header h3 {
-    margin-top: 15px;
-}
-
-.card header .button {
-    text-decoration: none;
-    background-color: #3a585f;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    display: inline-block;
-}
-
-.page main>section {
-    display: flex;
-}
-
-.page main>section>article {
-    width: 70%;
-    padding-right: 5%;
-}
-
-.page main>section>aside {
-    width: 30%;
-    min-height: 500px;
-    background-color: #74b1be;
-}
-
 .breadcrumb {
     font-size: 11px;
     margin-bottom: 40px;
@@ -261,6 +215,48 @@ a.download-btn {
     margin: 10px 0;
     display: inline-block;
     text-decoration: none;
+}
+
+.post-grid {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    padding: 50px 0;
+}
+
+.post-grid article {
+    width: 32%;
+    margin-bottom: 35px;
+}
+
+.post-grid article img {
+    max-width: 100%;
+    height: auto;    
+    margin: auto;
+    display: block;
+}
+
+.post-grid article .thumb {
+    border: 1px #eee solid;
+    border-radius: 5px
+}
+
+.post-grid article header .links {
+    text-align: center;
+}
+
+.post-grid article header h3 {
+    margin-top: 15px;
+}
+
+.post-grid article header .button {
+    text-decoration: none;
+    background-color: #3a585f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 /* contact form */

@@ -10,6 +10,8 @@ templatethumb: img/explore-bootstrap.jpg
 # Explore Bootstrap
 A Responsive Bootstrap Template with Draggable Photosphere Background.
 
+---
+
 <a href="https://github.com/jelontok/explore-bootstrap/archive/master.zip" class="download-btn" target="_blank"><i class="fab fa-github"></i> Download from GitHub</a>
 
 ![Explore Bootstrap - A Multi-Purpose Reponsive Bootstrap Template]({{ site.url }}/img/explore-bootstrap-full.png "Explore Bootstrap - Responsive Bootstrap Template with Draggable Photosphere Background")

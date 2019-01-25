@@ -2,3 +2,22 @@
 layout: default
 title: Free Website Templates | Myhedspace.com
 ---
+
+<h1 class="txt-c">Download our latest free website templates.</h1>
+<p class="txt-c">Myhedspace is a collection of free website templates built with HTML, CSS, and JS.</p>
+<hr class="small">
+
+<section class="post-grid">
+    {% for template in site.categories.Templates %}
+        <article>
+            <a href="{{ site.url }}{{ template.url }}"><img src="{{ site.url }}/{{ template.templatethumb }}" alt="thumb" class="thumb" /></a>
+            <header>
+                <h3 class="name txt-c">{{ template.title }}</h3>
+                <div class="links">
+                    <a href="{{ template.demourl }}" class="demo button" target="_blank"><i class="fas fa-link"></i> Demo</a>
+                    <a href="{{ site.url }}{{ template.url }}" class="download button"><i class="fas fa-download"></i> Download</a>
+                </div>
+            </header>
+        </article>
+    {% endfor %}
+</section>

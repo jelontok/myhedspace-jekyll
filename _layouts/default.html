@@ -15,6 +15,7 @@
                 <a href="{{ site.url }}" class="brand">Myhed<span>space</span></a>
                 <ul class="nav fc fc-e">
                     <li><a href="{{ site.url }}">Home</a></li>
+                    <li><a href="{{ site.url }}/about">About</a></li>
                     <li><a href="{{ site.url }}/contact">Contact</a></li>
                 </ul>
             </div>
@@ -48,32 +49,16 @@
         </section>
         
         <main>
-            <section class="container">
-                <h1 class="txt-c">Download our latest free website templates.</h1>
-                <p class="txt-c">Myhedspace is a collection of free website templates built with HTML, CSS, and JS.</p>
-                <section class="fgrid fgrid-3">
-
-                    {% for template in site.categories.Templates %}
-                        <div class="col">
-                            <div class="card">
-                                <a href="{{ site.url }}{{ template.url }}"><img src="{{ site.url }}/{{ template.templatethumb }}" alt="thumb" class="thumb" /></a>
-                                <header>
-                                    <h3 class="name txt-c">{{ template.title }}</h3>
-                                    <div class="links">
-                                        <a href="{{ template.demourl }}" class="demo button" target="_blank"><i class="fas fa-link"></i> Demo</a>
-                                        <a href="{{ site.url }}{{ template.url }}" class="download button"><i class="fas fa-download"></i> Download</a>
-                                    </div>
-                                </header>
-                            </div>     
-                        </div>                    
-                    {% endfor %}
-
-                </section>                
-            </section>
+            <div class="container">
+                
+                {{ content }}
+                
+            </div>
         </main>
         
         <footer id="site-footer">            
             <p>Myhedspace is a free website templates project created by <a href="http://jelontok.com">Jose Erlino Lontok</a></p>
+            <p>Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
             <p><a href="https://github.com/jelontok"><i class="fab fa-github"></i></a></p>
         </footer>
         
