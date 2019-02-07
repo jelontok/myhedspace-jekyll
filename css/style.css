@@ -140,6 +140,17 @@ main {
     color: #fff;
 }
 
+@media (max-width: 767px) {
+    .feature .fab, .feature .far {
+        font-size: 4em;
+        margin-right: 5px;
+    }
+    .feature .fas {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+}
+
 .feature .cta {
     background-color: #fff;
     max-width: 468px;
@@ -228,6 +239,12 @@ a.download-btn {
 .post-grid article {
     width: 32%;
     margin-bottom: 35px;
+}
+
+@media (max-width: 767px) {
+    .post-grid article {
+        width: 100%;        
+    }    
 }
 
 .post-grid article img {
